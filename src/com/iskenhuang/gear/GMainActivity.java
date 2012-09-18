@@ -1,6 +1,7 @@
 package com.iskenhuang.gear;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -27,17 +28,20 @@ public class GMainActivity extends Activity {
 
     private void init(){
     	ListView listView = (ListView) findViewById(R.id.mylist);
-		String[] values = new String[] { "connect MySQL" };
+		String[] values = new String[] { "ConnectMySQL" };
+		
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, android.R.id.text1, values);
 		listView.setAdapter(adapter);
 		listView.setOnItemClickListener(new OnItemClickListener() {
 
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				Toast.makeText(getApplicationContext(),
-						"Click ListItem Number " + position, Toast.LENGTH_LONG)
-						.show();
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Toast.makeText(getApplicationContext(), "Click ListItem Number " + position, Toast.LENGTH_LONG) .show();
+				if(position == 0){
+					Intent intent = new Intent();
+					intent.setClass(GMainActivity.this, DisplayResult.class);
+					startActivity(intent);
+				}
 			}
 		});
     }
