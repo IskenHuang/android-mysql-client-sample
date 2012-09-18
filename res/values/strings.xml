@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Gear</string>
+    <string name="app_name">Android-MySQL-Client</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_gmain">Gears</string>
+    <string name="title_activity_gmain">Android-MySQL-Client-sample</string>
     <string name="connectButton">Connect</string>
 
 </resources>

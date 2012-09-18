@@ -21,13 +21,11 @@ public final class R {
     }
     public static final class id {
         public static final int buttonResult=0x7f080000;
-        public static final int menu_settings=0x7f080003;
-        public static final int mylist=0x7f080002;
+        public static final int menu_settings=0x7f080002;
         public static final int textResult=0x7f080001;
     }
     public static final class layout {
-        public static final int display_result=0x7f030000;
-        public static final int gmain_activity=0x7f030001;
+        public static final int gmain_activity=0x7f030000;
     }
     public static final class menu {
         public static final int gmain_activity=0x7f070000;
